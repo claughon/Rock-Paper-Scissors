@@ -52,7 +52,7 @@ def RPC():
             print("Please input a valid option")
             print("\U0001F504")
     return player_win        
-RPC()
+
 
 def prize_wheel():
     prize_wheel = random.choice(["bean","video game", "money","house"])
