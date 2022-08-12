@@ -22,7 +22,7 @@ def RPC():
             player_win +=1
             print(f"Your opponent chose Scissors, you chose Rock!")
             print(f"Rock CRUSHES Scissors, YOU WIN!!")
-            print("\U0001FAA8")
+            print("\U0001F5FF")
         elif player_choice.title() == "Rock" and comp_choice == "Paper":
             print(f"Your opponent chose Paper, you chose Rock!")
             print(f"Paper SMOTHERS Rock, you LOSE!")
@@ -31,7 +31,7 @@ def RPC():
         elif player_choice.title() == "Scissors" and comp_choice == "Rock":
             print(f"Your opponent chose Rock, you chose Scissors!")
             print(f"Rock CRUSHES Scissors, you LOSE!")
-            print("\U0001FAA8")
+            print("\U0001F5FF")
             comp_win +=1
         elif player_choice.title() == "Scissors" and comp_choice == "Paper":
             print(f"Your opponent chose Paper, you chose Scissors!")
@@ -52,7 +52,6 @@ def RPC():
             print("Please input a valid option")
             print("\U0001F504")
     return player_win        
-# RPC()
 
 
 def prize_wheel():
