@@ -8,8 +8,11 @@ print("\U0001F5E1")
 
 print("\U0001F504")
 
+print("\U0001F5FF")
+
 print("\U0001F451")
 
 print("\U0001F5FF")
 
 print("\U0001F649")
+ main
