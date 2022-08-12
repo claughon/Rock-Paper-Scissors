@@ -52,4 +52,24 @@ def RPC():
             print("Please input a valid option")
             print("\U0001F504")
     return player_win        
-RPC()
+# RPC()
+
+
+def prize_wheel():
+    prize_wheel = random.choice(["bean","video game", "money","house"])
+    ticket = RPC()
+    prizes = []
+    while ticket > 0:
+        prize_wheel = random.choice(["tickets","bean","video game", "money","house"])
+        wheel_choice = input(f"You have {ticket} tickets. Would you like to spin?")
+        if wheel_choice == "yes":
+            ticket -= 1
+            prizes.append(prize_wheel)
+            print(prizes)            
+        elif wheel_choice == "no":
+            print(f"Thanks for playing! Here are your prizes! {prizes}")
+            break
+    while ticket == 0:
+        print(f"Here are your prizes! {prizes} Come again!")
+        break
+prize_wheel()
