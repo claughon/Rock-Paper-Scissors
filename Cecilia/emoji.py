@@ -7,3 +7,5 @@ print("\U0001F4DC")
 print("\U0001F5E1")
 
 print("\U0001F504")
+
+print("\U0001F5FF")

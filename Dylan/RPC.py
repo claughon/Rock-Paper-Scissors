@@ -15,6 +15,9 @@ def RPC():
             if comp_win > player_win:
                 print("Better luck next time!")
                 break
+            else:
+                print("All tied up")
+                break
         elif player_choice.title() == comp_choice:
             ties += 1
             print(f"You both chose {player_choice} , it's a tie! \u2694")
@@ -42,17 +45,19 @@ def RPC():
 # RPC()
 
 def prize_wheel():
+    prize_wheel = random.choice(["bean","video game", "money","house"])
     ticket = RPC()
-    prize_wheel = random.choice(["food","toy","money"])
     prizes = []
     while ticket > 0:
-        wheel_choice = input("Would you like to spin?")
+        prize_wheel = random.choice(["tickets","bean","video game", "money","house"])
+        wheel_choice = input(f"You have {ticket} tickets. Would you like to spin?")
         if wheel_choice == "yes":
             ticket -= 1
             prizes.append(prize_wheel)
-            print(prizes)
+            print(prizes)            
         elif wheel_choice == "no":
-            print("Thanks for playing!")
+            print(f"Thanks for playing! Here are your prizes! {prizes}")
+            break
     while ticket == 0:
         print(f"Here are your prizes! {prizes} Come again!")
         break
