@@ -9,7 +9,6 @@ def RPC():
         comp_choice = random.choice(["Rock", "Paper", "Scissors"])
         if player_choice.title() == "Quit":
             print(f"The final score was {player_win} to {comp_win} with {ties}! \U0001F600")
-            print("\U0001F9E8")	
             if player_win > comp_win:
                 print("You crushed your opponent! \U0001F451")
                 break
