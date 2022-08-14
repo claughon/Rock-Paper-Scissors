@@ -71,7 +71,7 @@ def prize_wheel():
     prizes = {}
     while ticket > 0:
         prize_wheel = random.choice(["bean","video game", "money","house"])
-        wheel_choice = input(f"You have {ticket} tickets. Would you like to spin?")
+        wheel_choice = input(f"You have {ticket} tickets. Would you like to spin? ")
         if wheel_choice == "yes":
             ticket -= 1
             if prize_wheel in prizes:
