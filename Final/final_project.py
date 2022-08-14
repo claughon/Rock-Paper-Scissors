@@ -77,6 +77,7 @@ def prize_wheel():
             if prize_wheel in prizes:
                 modify_key = prize_wheel
                 prizes[modify_key] = prizes.get(modify_key,0) +1
+                print(f"{prize_wheel} again! {prizes}")
             else:
                 prizes[prize_wheel] = 1
                 print(prizes)            
